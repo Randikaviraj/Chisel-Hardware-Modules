@@ -1,0 +1,17 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":" verilog "
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Decoder|Decoder>io_out",
+    "sources":[
+      "~Decoder|Decoder>io_in"
+    ]
+  }
+]
