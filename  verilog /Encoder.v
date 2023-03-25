@@ -1,0 +1,42 @@
+module Encoder(
+  input         clock,
+  input         reset,
+  input  [15:0] io_in,
+  output [3:0]  io_out
+);
+  wire [3:0] vec_1 = {{3'd0}, io_in[1]}; // @[Encoder.scala 15:41]
+  wire [1:0] _vec_2_T_1 = io_in[2] ? 2'h2 : 2'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_0 = {{2'd0}, _vec_2_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_2 = _GEN_0 | vec_1; // @[Encoder.scala 15:41]
+  wire [1:0] _vec_3_T_1 = io_in[3] ? 2'h3 : 2'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_1 = {{2'd0}, _vec_3_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_3 = _GEN_1 | vec_2; // @[Encoder.scala 15:41]
+  wire [2:0] _vec_4_T_1 = io_in[4] ? 3'h4 : 3'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_2 = {{1'd0}, _vec_4_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_4 = _GEN_2 | vec_3; // @[Encoder.scala 15:41]
+  wire [2:0] _vec_5_T_1 = io_in[5] ? 3'h5 : 3'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_3 = {{1'd0}, _vec_5_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_5 = _GEN_3 | vec_4; // @[Encoder.scala 15:41]
+  wire [2:0] _vec_6_T_1 = io_in[6] ? 3'h6 : 3'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_4 = {{1'd0}, _vec_6_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_6 = _GEN_4 | vec_5; // @[Encoder.scala 15:41]
+  wire [2:0] _vec_7_T_1 = io_in[7] ? 3'h7 : 3'h0; // @[Encoder.scala 15:22]
+  wire [3:0] _GEN_5 = {{1'd0}, _vec_7_T_1}; // @[Encoder.scala 15:41]
+  wire [3:0] vec_7 = _GEN_5 | vec_6; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_8_T_1 = io_in[8] ? 4'h8 : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_8 = _vec_8_T_1 | vec_7; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_9_T_1 = io_in[9] ? 4'h9 : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_9 = _vec_9_T_1 | vec_8; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_10_T_1 = io_in[10] ? 4'ha : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_10 = _vec_10_T_1 | vec_9; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_11_T_1 = io_in[11] ? 4'hb : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_11 = _vec_11_T_1 | vec_10; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_12_T_1 = io_in[12] ? 4'hc : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_12 = _vec_12_T_1 | vec_11; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_13_T_1 = io_in[13] ? 4'hd : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_13 = _vec_13_T_1 | vec_12; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_14_T_1 = io_in[14] ? 4'he : 4'h0; // @[Encoder.scala 15:22]
+  wire [3:0] vec_14 = _vec_14_T_1 | vec_13; // @[Encoder.scala 15:41]
+  wire [3:0] _vec_15_T_1 = io_in[15] ? 4'hf : 4'h0; // @[Encoder.scala 15:22]
+  assign io_out = _vec_15_T_1 | vec_14; // @[Encoder.scala 15:41]
+endmodule
