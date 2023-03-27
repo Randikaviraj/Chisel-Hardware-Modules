@@ -1,0 +1,39 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumDefAnnotation",
+    "typeName":"flasher.Flasher$State",
+    "definition":{
+      "off":0,
+      "space2":4,
+      "flash1":1,
+      "space1":2,
+      "flash2":3
+    }
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumComponentAnnotation",
+    "target":"Flasher.Flasher.currentState",
+    "enumTypeName":"flasher.Flasher$State"
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumDefAnnotation",
+    "typeName":"flasher.Flasher$TimerState",
+    "definition":{
+      "timmerOff":0,
+      "timerRunning":1
+    }
+  },
+  {
+    "class":"chisel3.experimental.EnumAnnotations$EnumComponentAnnotation",
+    "target":"Flasher.Flasher.timerstate",
+    "enumTypeName":"flasher.Flasher$TimerState"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":" verilog "
+  }
+]
