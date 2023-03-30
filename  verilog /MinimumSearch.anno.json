@@ -1,0 +1,26 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":" verilog "
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MinimumSearch|MinimumSearch>io_out",
+    "sources":[
+      "~MinimumSearch|MinimumSearch>io_in_0",
+      "~MinimumSearch|MinimumSearch>io_in_1",
+      "~MinimumSearch|MinimumSearch>io_in_2",
+      "~MinimumSearch|MinimumSearch>io_in_3",
+      "~MinimumSearch|MinimumSearch>io_in_4",
+      "~MinimumSearch|MinimumSearch>io_in_5",
+      "~MinimumSearch|MinimumSearch>io_in_6",
+      "~MinimumSearch|MinimumSearch>io_in_7",
+      "~MinimumSearch|MinimumSearch>io_in_8",
+      "~MinimumSearch|MinimumSearch>io_in_9"
+    ]
+  }
+]
