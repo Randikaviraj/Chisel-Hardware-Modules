@@ -6,6 +6,7 @@ import encoder.Encoder
 import flasher.Flasher
 import minimum.MinimumSearch
 import fifo.Fifo
+import  uart._
 import popcounter._
 import arbiter._
 import  chisel3._
@@ -13,6 +14,6 @@ import  chisel3._
 
 object  Main{
     def main(args: Array[String]) : Unit = {
-        emitVerilog (new Fifo(UInt(8.W),10) ,Array("--target-dir"," verilog "))
+        emitVerilog (new RX(36000,9600) ,Array("--target-dir"," verilog "))
     }
 }
