@@ -10,10 +10,11 @@ import  uart._
 import popcounter._
 import arbiter._
 import  chisel3._
+import leros.mem.Mem
 
 
 object  Main{
     def main(args: Array[String]) : Unit = {
-        emitVerilog (new RX(36000,9600) ,Array("--target-dir"," verilog "))
+        emitVerilog (new Mem(false,1028,32) ,Array("--target-dir"," verilog "))
     }
 }
